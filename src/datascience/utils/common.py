@@ -14,6 +14,7 @@ from box.exceptions import BoxValueError , BoxKeyError
 
 
 
+
 # this fucntion will read yaml file 
 @ensure_annotations
 def read_yaml(path_to_yaml:Path) -> ConfigBox :
@@ -131,4 +132,31 @@ def load_bin(path:Path)-> Any :
     
     data = joblib.load(path)
     logger.info(f"binary file loaded from : {path}")
-    return data
+    return data  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
