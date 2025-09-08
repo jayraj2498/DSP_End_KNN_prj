@@ -33,6 +33,7 @@
     3. update params.yaml 
     4. update entity 
     5. update the configration manager in src config 
+    
     6. update the component 
     7. update the pipeline 
     8. update the main.py 
