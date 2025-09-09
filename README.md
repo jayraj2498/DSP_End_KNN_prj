@@ -26,14 +26,20 @@
 
 
 
-1. Data ingetion :
+Data ingetion :
     1. update config.yaml 
-      data ingestion pipeline rwquire input so we crete those input here :
+      - data ingestion pipeline rwquire input so we crete those input here :
     2. update schema.yaml 
     3. update params.yaml 
     4. update entity 
-    5. update the configration manager in src config 
-    
+    5. update the configration manager in src configaration.py
+
     6. update the component 
+    - create the file : components-> data_ingestion.py 
     7. update the pipeline 
+     - pipeline-> 01_data_ingestion.py 
+     - update the pipeline code 
+     
+
     8. update the main.py 
+      - finally run this the all pipeline from main.py 
