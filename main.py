@@ -5,8 +5,6 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 
 
 
-
-
 STAGE_NAME = "Data Ingestion Stage"
 
 try :
