@@ -63,8 +63,12 @@ Data ingetion :
       upadte schemas.yaml (update every features ans their data types )
   3. update params.yaml 
   4. update entity 
+     update config_entity.py 
   5. update the configration manager in src config 
+     inside config-> configration.py 
   6. update the component 
+     inside component fold -> make data_validation.py 
   7. update the pipeline 
+    inside pipline fold-> make data_validation_pipeline.py 
   8. update the main.py 
 
