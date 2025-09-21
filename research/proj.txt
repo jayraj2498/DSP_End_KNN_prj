@@ -85,14 +85,21 @@ Data ingetion :
     we do train-test-split 
 
     1. update config.yaml :
-     we update data transformation input parameter 
+     we update data transformation input parameter here  
     2. update schema.yaml 
     3. update params.yaml 
     4. update entity 
+        inside the config_entity we define code 
+
+
     5. update the configration manager in src config 
+        then we update configration manager 
     6. update the component 
-    7. update the pipeline 
+        update the components code  
+    7. update the pipeline  
+        update pipeline code 
     8. update the main.py 
+        add all changes 
 
 
 
