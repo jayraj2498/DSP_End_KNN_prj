@@ -1,6 +1,6 @@
 from src.datascience.constants import CONFIG_FILE_PATH , PARAMS_FILE_PATH , SCHEMA_FILE_PATH
 from src.datascience.utils.common import read_yaml , create_directories 
-from src.datascience.entity.config_entity import (DataIngestionConfig,DataValidationConfig )
+from src.datascience.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationconfig )
 
 
 
@@ -43,7 +43,6 @@ class ConfigurationManager :
         
         create_directories([config.root_dir]) 
         
-        
         data_validation_config = DataValidationConfig(
             root_dir = config.root_dir ,
             STATUS_FILE= config.STATUS_FILE ,
@@ -51,5 +50,17 @@ class ConfigurationManager :
             all_schema = schema
             )
         
+        return data_validation_config 
+    
+    
+    
+    def get_data_transformation_config(self)-> DataTransformationconfig : 
+        config= self.config.data_transformation 
+        create_directories([config.root_dir])  
         
-        return data_validation_config
+        data_transformation_config = DataTransformationconfig(
+            root_dir = config.root_dir , 
+            data_path = config.data_path 
+        ) 
+        
+        return data_transformation_config 
