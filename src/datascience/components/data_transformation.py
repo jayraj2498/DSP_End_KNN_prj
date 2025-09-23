@@ -5,30 +5,26 @@ import pandas as pd
 from src.datascience.entity.config_entity import DataTransformationconfig  
 
 
-# here you can add diff data transformation techniques such as scaler , pca ,fe , and all etc 
-
-class DataTransformation : 
-    def __init__(self,config:DataTransformationconfig) :
+class DataTransformation: 
+    def __init__(self, config: DataTransformationconfig):
         self.config = config 
         
+    def train_test_splitting(self):
+        data = pd.read_csv(self.config.data_path) 
+
+        logger.info("Loaded data for transformation")
+        logger.info(f"Data shape: {data.shape}")
+        logger.info(f"Columns: {list(data.columns)}")
+        logger.info(f"Dtypes:\n{data.dtypes}")
+
+        train, test = train_test_split(data, test_size=0.25, random_state=42)
         
-    def train_test_splitting(self) :
-        data= pd.read_csv(self.config.data_path) 
+        train.to_csv(os.path.join(self.config.root_dir, "train.csv"), index=False) 
+        test.to_csv(os.path.join(self.config.root_dir, "test.csv"), index=False) 
         
-        train , test = train_test_split(data,test_size=0.25)
+        logger.info("Splitted the data into train and test")
+        logger.info(f"Train shape: {train.shape}")
+        logger.info(f"Test shape: {test.shape}") 
         
-        # now we are seprating two train and test data 
-        train.to_csv(os.path.join(self.config.root_dir ,"train.csv") , index=False) 
-        test.to_csv(os.path.join(self.config.root_dir , "test.csv") , index=False) 
-        
-        logger.info("splited the data into train and test ")
-        logger.info(train.shape)
-        logger.info(test.shape) 
-        
-        
-        print(train.shape)
-        print(test.shape)
-                     
-                   
-        
-        
+        print("Train:", train.shape)
+        print("Test:", test.shape)

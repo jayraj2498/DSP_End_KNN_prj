@@ -18,7 +18,6 @@ class DataValidationConfig :
     all_schema : dict  
     
     
-    
 @dataclass 
 class DataTransformationconfig : 
     root_dir : Path 
