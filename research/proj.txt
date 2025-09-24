@@ -81,8 +81,8 @@ Data ingetion :
 
 3. Data Transformation :
     inside the Transformation we do feature enginering , data preprocessing 
-    we can perform feature enginnering but we have clean data 
-    we do train-test-split 
+    we can perform feature enginnering here , but we have clean data 
+    we do train-test-split only 
 
     1. update config.yaml :
      we update data transformation input parameter here  
@@ -93,7 +93,7 @@ Data ingetion :
     5. update the configration manager in src config 
         then we update config -> configration.py   
     6. update the component 
-        update the components folder create data_transformation.py 
+        update the components folder -> create data_transformation.py 
     7. update the pipeline      
         inside pipeline -> we make data_transformation_pipeline.py 
         update pipeline code 
@@ -102,3 +102,36 @@ Data ingetion :
 
 
 
+
+4. Model trainer : 
+
+  1. update config.yaml 
+      upadte the config file 
+  2. update schema.yaml 
+  3. update params.yaml 
+      we update parameter for our algo 
+  4. update entity 
+      update all yaml file var  here we also upadate algorithm parameter -> config_entity.py 
+  5. update the configration manager in src config 
+      config-> configration.py 
+  6. update the component 
+      inside component create file model_tranier.py 
+  7. update the pipeline 
+      create the pipeline -> model_trainer_pipeline.py 
+  8. update the main.py 
+
+
+
+
+
+
+5. Model evaluation  
+
+    1. update config.yaml 
+    2. update schema.yaml 
+    3. update params.yaml 
+    4. update entity 
+    5. update the configration manager in src config 
+    6. update the component 
+    7. update the pipeline 
+    8. update the main.py 
