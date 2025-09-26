@@ -47,7 +47,8 @@ if __name__ == "__main__":
         raise e 
 
 
-
+    
+    # ================= model trainer Stage =================
     STAGE_NAME = "Model Trainer Stage"
     try:
         logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")  
@@ -58,3 +59,7 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception(e) 
         raise e
+
+
+
+
