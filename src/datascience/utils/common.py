@@ -62,20 +62,22 @@ def create_directories(path_to_directories:list , verbose=True) :
     
     
     
-# funt for saving the json file     
+# function for saving the json file     
 @ensure_annotations 
-def save_json(path:Path , data:dict) :
+def save_json(path: Path, data: dict):
     """ 
     Save json 
     
     Args:
-    Path(path) :path of json file 
-    data(dict) : data to be saved  
+        path (Path): path of json file 
+        data (dict): data to be saved  
     """
-    with open(Path ,"w") as f :
-        json.dump(data , f , indent=4) 
+    with open(path, "w") as f:   
+        json.dump(data, f, indent=4) 
         
-    logger.info(f"json file saved at : {path}") 
+    logger.info(f"json file saved at : {path}")
+
+
     
     
     

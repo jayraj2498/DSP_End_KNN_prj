@@ -1,0 +1,10 @@
+artifact_location: file:///E:/Ds_p1/DSP_End_KNN_prj/mlruns/0/models/m-04630be42d4147439f54ec26723a83f4/artifacts
+creation_timestamp: 1759074742235
+experiment_id: '0'
+last_updated_timestamp: 1759074758076
+model_id: m-04630be42d4147439f54ec26723a83f4
+model_type: null
+name: model
+source_run_id: d80fd1762de54602b4cc95dd9bb22127
+status: 2
+status_message: null

@@ -133,7 +133,11 @@ Data ingetion :
     2. update schema.yaml 
     3. update params.yaml 
     4. update entity 
+        update path entity-> config_entity.py 
     5. update the configration manager in src config 
+        config-> update configration.py 
     6. update the component 
+        component -> model_evaluation.py 
     7. update the pipeline 
+        update model_evaluation_pipeline.py 
     8. update the main.py 
