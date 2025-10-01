@@ -1,7 +1,8 @@
 venv/
 logs/
 artifacts/ 
-mlruns/ 
+mlruns/      
+
 
 
 
