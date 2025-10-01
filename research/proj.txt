@@ -151,4 +151,4 @@ prdiction_pipeline.py
 but we have to create the frontend ui & then include this prediction pipelne fom frontend ui 
 
 we make app.py inside we make flask app 
-    - we display the homepage in index.html 
+    - we display the homepage in index.html and result in result.html 
