@@ -121,10 +121,6 @@ Data ingetion :
   8. update the main.py 
 
 
-
-
-
-
 5. Model evaluation  
 
     1. update config.yaml   
@@ -141,3 +137,18 @@ Data ingetion :
     7. update the pipeline 
         update model_evaluation_pipeline.py 
     8. update the main.py 
+
+
+
+
+
+# now we gonna do our prediction pipline 
+
+so we make .py file inside pipeline folder 
+prdiction_pipeline.py  
+
+
+but we have to create the frontend ui & then include this prediction pipelne fom frontend ui 
+
+we make app.py inside we make flask app 
+    - we display the homepage in index.html 
